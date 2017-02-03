@@ -1,1 +1,20 @@
 apply plugin:'java'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+compile group : 'org.apache.commons', name: 'commons-csv', version:1.4
+compile files("*/usr/lib/jvm/java-8-oracle/lib")
+}
+
+sourceCompatibility = 1.7
+version = '1.4'
+jar {
+	manifest {
+		attributes 'Main-Class': 'csci2020u/lab2.CSVDemo',
+		'Implementation-Title': 'Sample-Gradle',
+		'Implementation-Version': version
+	}
+}

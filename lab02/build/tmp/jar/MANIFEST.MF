@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: Sample-Gradle
+Implementation-Version: 1.4
+Main-Class: csci2020u/lab2.CSVDemo
+
